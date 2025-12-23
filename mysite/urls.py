@@ -26,6 +26,7 @@ urlpatterns = [
     #path ( 'url adress' , 'view' )
     path('',include('website.urls')),
     #path('blog',include('blog.urls'))
+    path('blog/',include('blog.urls'))
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
